@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <ul>
+
+        {% for user in all_users %}
+        <a href="{% url 'user_profile' username=user.username %}" class="btn" style="color: white; background-color:blue;"type="submit"; id="header-links" > {{user.username}}</a>
+        <br>
+        <br>
+        <br>
+        {% endfor %}
+
+    </ul>
+    
+{% endblock %}

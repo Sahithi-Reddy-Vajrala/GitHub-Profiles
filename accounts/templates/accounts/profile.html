@@ -1,0 +1,24 @@
+{% extends 'accounts/base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div class="container">
+        <br>
+        <br>
+        <h2 style="text-align: center;">{{user.first_name}} {{user.last_name}} (@ {{user.username}})</h2>
+        <p></p>
+        <p>{{user.profile.number_of_followers}} followers.</p>
+        <p>Time last Updated: {{ user.profile.time }}
+         {% if user.is_authenticated %}
+        <a href="{% url 'update_profile' %}">update profile</a>
+        
+        {% endif %}
+        <ul>
+        {% for m in data %}
+  	<li>{{m.reponame}}: {{m.stars}} stars </li>
+  	{% endfor %}
+	</ul>
+       
+    </div>
+{% endblock %}

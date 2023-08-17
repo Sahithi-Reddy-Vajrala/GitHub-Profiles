@@ -1,0 +1,12 @@
+1. For getting basic Template Pages:
+	1. https://youtu.be/mOS0L5Lb2u0
+	2. https://youtu.be/meREllvata8
+2. For getting user list to display in explore page:
+	http://www.learningaboutelectronics.com/Articles/How-to-retrieve-all-users-of-the-default-user-model-in-Django.php
+3. For displaying Another User Profile when requested in explore page:
+	https://stackoverflow.com/questions/33724344/how-can-i-display-a-user-profile-using-django
+4. For Extending Django User Model:
+	https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html
+5. For Heroko Deployment:
+	https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html
+	https://stackabuse.com/how-to-deploy-a-django-application-to-heroku-with-git-cli/
